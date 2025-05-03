@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<section class="payment_success_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Payment Successful</h2>
+    </div>
+    <p>Thank you for your payment. Your order has been placed successfully.</p>
+    <p><strong>Payment Mode:</strong> {{ payment_mode }}</p>
+    <p><strong>Delivery Address:</strong> {{ address }}</p>
+    <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
+  </div>
+</section>
+{% endblock main %}

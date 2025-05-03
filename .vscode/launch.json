@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Flask API",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/Resturant_Project/flask_api.py",
+      "console": "integratedTerminal",
+      "env": {
+        "FLASK_APP": "flask_api.py",
+        "FLASK_ENV": "development"
+      }
+    },
+    {
+      "name": "Run Gunicorn Script",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "bash",
+      "args": [
+        "${workspaceFolder}/run_gunicorn.sh"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
