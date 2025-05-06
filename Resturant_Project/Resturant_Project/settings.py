@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Resturant_Project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['Template'],
+        'DIRS': [BASE_DIR / 'Template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

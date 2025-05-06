@@ -109,7 +109,7 @@ def view_cart(request):
     for item_id, quantity in cart.items():
         try:
             item = Items.objects.get(id=item_id)
-            item_total = item.price * quantity
+            item_total = item.Price * quantity
             total_price += item_total
             cart_items.append({'item': item, 'quantity': quantity, 'total': item_total})
         except Items.DoesNotExist:
